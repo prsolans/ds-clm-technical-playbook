@@ -78,7 +78,7 @@ export interface ApiDocLink {
 export interface Resources {
   security: {
     title: string;
-    items: string[];
+    items: ApiDocLink[];
   };
   api: {
     title: string;
@@ -385,15 +385,15 @@ export const closingTheMeeting = {
 
 export const resources: Resources = {
   security: {
-    title: "Security Documentation",
+    title: "Security Documentation & Compliance",
     items: [
-      "SOC 2 Type 2 Report",
-      "ISO 27001:2022 Certificate",
-      "PCI DSS Compliance",
-      "CSA STAR Attestation",
-      "APEC PRP Certification",
-      "Security White Paper",
-      "FedRAMP Package (if applicable)"
+      { text: "Docusign Trust Center", url: "https://www.docusign.com/trust" },
+      { text: "Security Overview", url: "https://www.docusign.com/trust/security", note: "Security controls & practices" },
+      { text: "CLM Security Details", url: "https://www.docusign.com/trust/security/clm" },
+      { text: "Compliance & Certifications", url: "https://www.docusign.com/trust/compliance/certifications", note: "SOC 2, ISO 27001, PCI DSS, CSA STAR, APEC PRP" },
+      { text: "Security & Trust Assurance Packet (STAP)", url: "https://www.docusign.com/trust/stap", note: "Audit reports, certifications, attestations" },
+      { text: "Security Resources & White Papers", url: "https://www.docusign.com/trust/security/resources" },
+      { text: "FedRAMP Authorization Information", url: "https://www.docusign.com/blog/are-docusign-products-authorized-by-fedramp", note: "eSignature & CLM are FedRAMP Moderate authorized" }
     ]
   },
   api: {
