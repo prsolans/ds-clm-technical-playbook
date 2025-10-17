@@ -86,7 +86,7 @@ export interface Resources {
   };
   integration: {
     title: string;
-    items: string[];
+    items: ApiDocLink[];
   };
 }
 
@@ -411,13 +411,16 @@ export const resources: Resources = {
     ]
   },
   integration: {
-    title: "Integration Resources",
+    title: "Integration Resources & Pre-Built Connectors",
     items: [
-      "Integration Patterns Guide",
-      "Salesforce Integration Documentation",
-      "ServiceNow Integration Documentation",
-      "SAP Integration Documentation",
-      "Custom Integration Best Practices"
+      { text: "CLM for Salesforce", url: "https://www.docusign.com/integrations/clm-for-salesforce", note: "Native integration for automated contract workflows" },
+      { text: "CLM for Salesforce - Admin Guide", url: "https://support.docusign.com/en/guides/DocuSign-CLM-for-Salesforce" },
+      { text: "CLM for Salesforce - User Guide", url: "https://support.docusign.com/en/guides/SpringCM-for-Salesforce-User-Guide" },
+      { text: "ServiceNow Integration Guide", url: "https://www.docusign.com/blog/how-to-use-docusign-clm-servicenow", note: "Automate contract process in ServiceNow" },
+      { text: "CLM API Overview", url: "https://developers.docusign.com/docs/clm-api/", note: "Integrate CLM workflow & document management into custom apps" },
+      { text: "CLM API 101", url: "https://developers.docusign.com/docs/clm-api/clm101/", note: "Getting started with CLM API integration" },
+      { text: "Partner Integration Overview", url: "https://developers.docusign.com/partner/partner-implementation-overview/", note: "Building integrations with Docusign" },
+      { text: "Open & Extensible Integration Framework", url: "https://www.docusign.com/products/electronic-signature/learn/open-and-extensible", note: "Platform integration capabilities" }
     ]
   }
 };
