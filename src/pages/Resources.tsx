@@ -25,7 +25,7 @@ const Resources = () => {
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: '#7B2FBE', textDecoration: 'underline' }}
+                style={{ color: '#b794f4', textDecoration: 'underline' }}
               >
                 {item.text}
               </a>
