@@ -45,13 +45,13 @@
 .nav-item:hover {
   background: #2a2a2a;
   color: #fff;
-  border-left-color: #7B2FBE;
+  border-left-color: #b794f4;
 }
 
 .nav-item.active {
   background: #2a2a2a;
-  color: #7B2FBE;
-  border-left-color: #7B2FBE;
+  color: #b794f4;
+  border-left-color: #b794f4;
   font-weight: 600;
 }
 
@@ -79,11 +79,11 @@
 .nav-section-header:hover {
   background: #2a2a2a;
   color: #fff;
-  border-left-color: #7B2FBE;
+  border-left-color: #b794f4;
 }
 
 .nav-section-header.section-active {
-  color: #7B2FBE;
+  color: #b794f4;
 }
 
 .section-arrow {
@@ -107,13 +107,13 @@
 
 .nav-subitem:hover {
   background: #282828;
-  border-left-color: #7B2FBE;
+  border-left-color: #b794f4;
 }
 
 .nav-subitem.active {
   background: #282828;
-  color: #7B2FBE;
-  border-left-color: #7B2FBE;
+  color: #b794f4;
+  border-left-color: #b794f4;
   font-weight: 600;
 }
 
