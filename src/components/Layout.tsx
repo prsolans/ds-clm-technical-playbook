@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <div className="layout">
       <header className="header">
-        <h1>CLM Technical Playbook</h1>
+        <h1>CLM Technical Architecture Conversation Playbook</h1>
         <p className="subtitle">Security, Availability & Integration Deep Dive</p>
       </header>
 
