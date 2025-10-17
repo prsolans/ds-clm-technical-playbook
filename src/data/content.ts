@@ -322,7 +322,7 @@ export const openingScript = {
   },
   slide3: {
     title: "Agenda & Check-In",
-    script: "Here's what we're going to cover:\n- Security - How we encrypt everything, our certifications, and our architecture\n- Availability - Our uptime guarantee and disaster recovery\n- Integration - How you'll connect CLM to your existing systems\n\nI have about 30-45 minutes of content, but I'd rather this be a conversation. As we go, if something isn't relevant to your environment, tell me and we'll adjust.",
+    script: "Here's what we're going to cover:\n- Security - How we encrypt everything, our certifications, and our architecture\n- Availability - Our uptime guarantee and disaster recovery\n- Integration - How you'll connect CLM to your existing systems\n\nI have less than 20 minutes of prepared content, but I'd rather this be a conversation. As we go, if something isn't relevant to your environment, tell me and we'll adjust.",
     checkIn: "Does this align with what you needed to see today, or should we prioritize differently?"
   }
 };
