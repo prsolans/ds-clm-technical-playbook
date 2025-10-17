@@ -108,7 +108,7 @@ export const preMeetingPrep: PreMeetingPrep = {
       },
       {
         label: "Data Residency Requirements",
-        detail: "Where must their data live? This is a deal-breaker for many enterprises. US, EU, Fed Gov, or no requirement? If they're EU-based, they likely need EU data centers (Azure: Amsterdam/Dublin/London or Legacy: Amsterdam/London). If they're US Fed, they need FedGov regions. If they say 'data cannot leave [country]', you need to know our commitments and contract language. Check Salesforce notes or ask your AE directly. This determines which data center locations you highlight when discussing infrastructure and data residency."
+        detail: "Where must their data live? This is a deal-breaker for many enterprises. US, EU, Australia, Fed Gov, or no requirement? If they're EU-based, they likely need EU data centers (Azure: North Europe/West Europe or Legacy: Amsterdam/London). If they're US-based (Azure: CentralUS/EastUS2 or Legacy: Chicago/Las Vegas). Australia customers have Azure: Australia East/Australia Southwest. If they're US Fed, they need FedGov regions. If they say 'data cannot leave [country]', you need to know our commitments and contract language. Check Salesforce notes or ask your AE directly. This determines which data center locations you highlight when discussing infrastructure and data residency."
       },
       {
         label: "Escalation Contacts",
@@ -194,9 +194,9 @@ export const azureVsLegacy: AzureVsLegacy = {
     }
   ],
   azureStory: {
-    locations: "Azure regions (US East/West/Central, EU Amsterdam/Dublin/London, Fed Gov)",
-    message: "Microsoft infrastructure + Docusign expertise",
-    emphasis: "Cloud-native, elastic scaling, future features"
+    locations: "Azure regions with high availability: US (CentralUS, EastUS2), Europe (North Europe, West Europe), Australia (Australia East, Australia Southwest), Fed Gov",
+    message: "Microsoft infrastructure + Docusign expertise with 3 Availability Zones per region for redundancy",
+    emphasis: "Cloud-native, elastic scaling, future features, geo-redundant architecture"
   },
   legacyStory: {
     locations: "US (Chicago, Las Vegas), EU (Amsterdam, London), Fed (Ashburn, VA)",
