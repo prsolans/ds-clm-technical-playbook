@@ -19,12 +19,7 @@ const ConversationControl = () => {
           className="accordion-header"
           onClick={() => setExpandedId(expandedId === 1 ? null : 1)}
         >
-          <div>
-            <h2 className="accordion-title" style={{ marginBottom: '0.25rem' }}>{conversationControl.parkingLot.title}</h2>
-            <p style={{ fontSize: '0.9rem', color: '#888', margin: 0 }}>
-              When to use: {conversationControl.parkingLot.whenToUse?.join(' • ')}
-            </p>
-          </div>
+          <h2 className="accordion-title">{conversationControl.parkingLot.title}</h2>
           <span className="accordion-icon">{expandedId === 1 ? '▼' : '▶'}</span>
         </div>
         {expandedId === 1 && (
@@ -52,12 +47,7 @@ const ConversationControl = () => {
           className="accordion-header"
           onClick={() => setExpandedId(expandedId === 2 ? null : 2)}
         >
-          <div>
-            <h2 className="accordion-title" style={{ marginBottom: '0.25rem' }}>{conversationControl.pivot.title}</h2>
-            <p style={{ fontSize: '0.9rem', color: '#888', margin: 0, fontStyle: 'italic' }}>
-              {conversationControl.pivot.template}
-            </p>
-          </div>
+          <h2 className="accordion-title">{conversationControl.pivot.title}</h2>
           <span className="accordion-icon">{expandedId === 2 ? '▼' : '▶'}</span>
         </div>
         {expandedId === 2 && (
@@ -77,12 +67,7 @@ const ConversationControl = () => {
           className="accordion-header"
           onClick={() => setExpandedId(expandedId === 3 ? null : 3)}
         >
-          <div>
-            <h2 className="accordion-title" style={{ marginBottom: '0.25rem' }}>{conversationControl.exit.title}</h2>
-            <p style={{ fontSize: '0.9rem', color: '#e74c3c', margin: 0, fontWeight: 600 }}>
-              Principle: Never fake it. Never.
-            </p>
-          </div>
+          <h2 className="accordion-title">{conversationControl.exit.title}</h2>
           <span className="accordion-icon">{expandedId === 3 ? '▼' : '▶'}</span>
         </div>
         {expandedId === 3 && (

@@ -252,7 +252,7 @@ export const objectionHandling: Objection[] = [
 
 export const conversationControl = {
   parkingLot: {
-    title: "The Parking Lot",
+    title: "The Parking Lot (When Things Could Get Derailed)",
     whenToUse: [
       "They ask a detailed question that would derail the flow",
       "You don't know the answer and need to follow up",
