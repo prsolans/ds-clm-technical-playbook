@@ -1,0 +1,8 @@
+/* App-level styles - minimal, most styling in component CSS files */
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
