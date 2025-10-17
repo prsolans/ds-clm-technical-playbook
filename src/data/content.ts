@@ -96,23 +96,23 @@ export const preMeetingPrep: PreMeetingPrep = {
     items: [
       {
         label: "Deployment Model",
-        detail: "Azure (new customers) or Legacy (existing customers) - Determines data center story"
+        detail: "Azure (new customers) or Legacy (existing customers) - This is THE most important question to answer. It determines your entire data center story, which regions you'll reference, and how you position infrastructure. New customers or those without existing Docusign products → Azure. Existing eSignature customers → Legacy. Check with your AE or in Salesforce. If you don't know this, you'll contradict yourself in the meeting."
       },
       {
         label: "Audience Composition",
-        detail: "Security-heavy, IT Ops, DevOps/Integration, or Mixed - Dictates slide emphasis"
+        detail: "Who's attending and what are their priorities? Security-heavy audience (CISO, InfoSec) → spend 60% of time on slides 5-7, dive deep on certifications and encryption. IT Ops audience → emphasize uptime, disaster recovery, monitoring. DevOps/Integration audience → focus on API architecture, webhooks, rate limits. Mixed audience → hit all three but watch for signals of what matters most. Ask your AE: 'Who's attending and what do they care about?'"
       },
       {
         label: "Industry & Compliance",
-        detail: "SOC 2, ISO 27001, HIPAA, FedRAMP, GDPR, PCI - For Certifications & Compliance discussion"
+        detail: "Which compliance frameworks matter to them? Financial services typically need SOC 2 Type 2 and ISO 27001. Healthcare needs HIPAA BAA. Federal needs FedRAMP Moderate (Docusign is FedRAMP Moderate authorized). EU customers need GDPR commitments. Retail may need PCI DSS. Check the security questionnaire they submitted or ask your AE. This dictates which certifications you emphasize and which you have documentation ready for."
       },
       {
         label: "Data Residency Requirements",
-        detail: "US, EU, US Fed, or None - For Data Centers & Regions discussion"
+        detail: "Where must their data live? This is a deal-breaker for many enterprises. US, EU, Fed Gov, or no requirement? If they're EU-based, they likely need EU data centers (Azure: Amsterdam/Dublin/London or Legacy: Amsterdam/London). If they're US Fed, they need FedGov regions. If they say 'data cannot leave [country]', you need to know our commitments and contract language. Check Salesforce notes or ask your AE directly. This determines which data center locations you highlight on slides 12-13."
       },
       {
         label: "Escalation Contacts",
-        detail: "SE backup, Security SME, Integration SME"
+        detail: "Know who to call when you need backup. Have phone numbers or Slack handles ready: SE backup (if you're on PTO or need a second opinion), Security SME (for deep encryption/key management questions you can't answer), Integration SME (for complex API/webhook scenarios beyond your knowledge). Write these down. You'll look terrible if you say 'I'll get you an answer' and then can't find the right person. Also: know the status page URL (trust.docusign.com) and where to find real-time uptime data."
       }
     ]
   },
@@ -121,23 +121,23 @@ export const preMeetingPrep: PreMeetingPrep = {
     items: [
       {
         label: "Current State",
-        detail: "What CLM solution (if any)? What pain points?"
+        detail: "What CLM system are they using today, if any? Manual process in Word/SharePoint? Competitor like Icertis, Agiloft, or Ironclad? Legacy on-prem system like Apttus or Conga? Understanding their current pain points lets you position CLM as the solution to specific problems they're already feeling. Ask: 'What's broken about your current process?' Their answer tells you which features to emphasize. No CLM at all? Focus on time savings and risk reduction. Competitor? Understand what they don't like about it."
       },
       {
         label: "Integration Targets",
-        detail: "Key systems (CRM, ERP, etc.) they need to connect"
+        detail: "Which systems do they need CLM to connect to? Salesforce is most common (emphasize native integration, configuration vs. code). SAP for large enterprises (mention partner-built integrations). NetSuite, Workday, ServiceNow are also frequent. If they have a homegrown ERP or niche system, you'll need to discuss custom API integration approach and emphasize that discovery with PS/SI partners is required to scope timelines. Knowing this lets you speak specifically: 'Here's how we integrate with YOUR systems' vs. generic API talk. Check Salesforce opportunity notes or ask AE."
       },
       {
         label: "Competitive Context",
-        detail: "Who else are they evaluating?"
+        detail: "Who else are they evaluating? This changes your positioning. Icertis → emphasize ease of use, speed to value, Docusign's existing trust. Ironclad → emphasize enterprise scale, security, compliance. Conga → emphasize modern platform, better integration, Microsoft partnership (if Azure). DocuSign eSignature customers considering others → emphasize unified platform story. If you know they're 'Docusign or nothing', you can focus on fit vs. competition. Ask your AE: 'Who are we up against?' This determines how you frame our strengths."
       },
       {
         label: "Previous Concerns",
-        detail: "What's been raised in prior meetings? Any landmines?"
+        detail: "What objections or concerns came up in prior meetings? Did they ask about data residency and not get a clear answer? Did they raise API rate limits? Did they express skepticism about uptime? Read the Salesforce notes from previous calls. If the AE says 'They're concerned about integration complexity', you know to spend extra time on slides 16-18 and bring concrete examples. If someone was a skeptic in the last meeting, address their concern proactively in your opening. This prevents you from stepping on landmines they've already identified."
       },
       {
         label: "Security Questionnaire",
-        detail: "Have they submitted one? What questions need depth?"
+        detail: "Have they submitted a security questionnaire? If yes, review it before the call. Which questions did they ask? Deep questions about encryption key rotation? That's a signal they have sophisticated security requirements - bring our key management documentation. Questions about penetration testing? Have our SOC 2 report ready. Questions about incident response? Know our SLAs and escalation process. If they haven't submitted one yet, expect detailed security questions live - be ready to pivot to 'Let me get you our detailed security documentation' rather than guessing."
       }
     ]
   },
@@ -146,15 +146,15 @@ export const preMeetingPrep: PreMeetingPrep = {
     items: [
       {
         label: "Customer References",
-        detail: "2-3 relevant case studies in their industry/deployment model"
+        detail: "Have 2-3 relevant case studies ready. Same industry? Same deployment model? Similar integration complexity? Mentioning 'We did this same integration for [company in their industry]' builds instant credibility. Check with your AE for which references are referenceable and approved. If you don't have exact matches, find analogous ones: 'Similar to how we integrated with [company]'s Salesforce environment...' This shows you've done this before and reduces their perceived risk. Keep these in your back pocket for objections."
       },
       {
         label: "Tech Stack",
-        detail: "Azure/AWS/GCP shop? Microsoft-heavy? Dev languages?"
+        detail: "Are they an Azure shop? AWS? GCP? If they're Microsoft-heavy (Office 365, Azure, Teams), emphasize the Azure deployment model and Microsoft partnership. If they're AWS-centric, emphasize cloud-native architecture and focus less on Microsoft. What dev languages do their engineers use? If they're a Java shop, mention Java SDKs. If they're Python, mention Python SDKs. This shows you understand their environment. Check their LinkedIn company page, job postings, or ask your AE. Small signals of understanding their tech stack build trust."
       },
       {
         label: "Stakeholder Intel",
-        detail: "LinkedIn profiles scanned? Any known skeptics?"
+        detail: "Who are the key stakeholders and what are their biases? Scan LinkedIn profiles for their backgrounds. Former developer → will ask detailed API questions, bring technical depth. Former lawyer → will care about compliance and audit trails. Long tenure at company → may be resistant to change, emphasize low-risk deployment. New to company → may be eager to prove themselves, emphasize quick wins. Any known skeptics from prior meetings? Address their concerns proactively. Any champions? Acknowledge their support and build on it. This isn't creepy - it's preparation."
       }
     ]
   },
@@ -233,7 +233,7 @@ export const objectionHandling: Objection[] = [
   {
     category: 'Integration',
     question: "How long does integration really take?",
-    answer: "It depends on your ecosystem and integration complexity. Here's a framework: Salesforce/Google Workspace (Docusign-built): Days - it's configuration, not development. ServiceNow/SAP (Partner-built): 1-2 weeks for initial setup, more if you have customizations. Custom APIs: 2-8 weeks on average, depending on: Number of systems, Complexity of data mapping, Your internal development process. What systems are you planning to integrate with?",
+    answer: "That's a great question, and the honest answer is: it depends on your specific environment and requirements. Integration timelines vary significantly based on which systems you're connecting, your data complexity, internal processes, and whether you're using pre-built connectors or custom APIs. Rather than give you a generic timeline that might not reflect reality, here's what I'd recommend: let's do a proper discovery with our Professional Services team or one of our trusted System Integrator partners. They can assess your specific landscape, understand your requirements, and provide a realistic timeline and scope. What systems are you planning to integrate with? That'll help me connect you with the right resources.",
     relatedSlides: ["Integration Overview", "Pre-built Integrations", "Custom Integration Patterns"]
   },
   {
