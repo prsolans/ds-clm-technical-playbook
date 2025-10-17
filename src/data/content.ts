@@ -100,7 +100,7 @@ export const preMeetingPrep: PreMeetingPrep = {
       },
       {
         label: "Audience Composition",
-        detail: "Who's attending and what are their priorities? Security-heavy audience (CISO, InfoSec) → spend 60% of time on slides 5-7, dive deep on certifications and encryption. IT Ops audience → emphasize uptime, disaster recovery, monitoring. DevOps/Integration audience → focus on API architecture, webhooks, rate limits. Mixed audience → hit all three but watch for signals of what matters most. Ask your AE: 'Who's attending and what do they care about?'"
+        detail: "Who's attending and what are their priorities? Security-heavy audience (CISO, InfoSec) → spend 60% of time on security architecture, certifications, and encryption topics - dive deep on SOC 2, ISO 27001, and data protection. IT Ops audience → emphasize uptime, disaster recovery, monitoring. DevOps/Integration audience → focus on API architecture, webhooks, rate limits. Mixed audience → hit all three but watch for signals of what matters most. Ask your AE: 'Who's attending and what do they care about?'"
       },
       {
         label: "Industry & Compliance",
@@ -108,7 +108,7 @@ export const preMeetingPrep: PreMeetingPrep = {
       },
       {
         label: "Data Residency Requirements",
-        detail: "Where must their data live? This is a deal-breaker for many enterprises. US, EU, Fed Gov, or no requirement? If they're EU-based, they likely need EU data centers (Azure: Amsterdam/Dublin/London or Legacy: Amsterdam/London). If they're US Fed, they need FedGov regions. If they say 'data cannot leave [country]', you need to know our commitments and contract language. Check Salesforce notes or ask your AE directly. This determines which data center locations you highlight on slides 12-13."
+        detail: "Where must their data live? This is a deal-breaker for many enterprises. US, EU, Fed Gov, or no requirement? If they're EU-based, they likely need EU data centers (Azure: Amsterdam/Dublin/London or Legacy: Amsterdam/London). If they're US Fed, they need FedGov regions. If they say 'data cannot leave [country]', you need to know our commitments and contract language. Check Salesforce notes or ask your AE directly. This determines which data center locations you highlight when discussing infrastructure and data residency."
       },
       {
         label: "Escalation Contacts",
@@ -133,7 +133,7 @@ export const preMeetingPrep: PreMeetingPrep = {
       },
       {
         label: "Previous Concerns",
-        detail: "What objections or concerns came up in prior meetings? Did they ask about data residency and not get a clear answer? Did they raise API rate limits? Did they express skepticism about uptime? Read the Salesforce notes from previous calls. If the AE says 'They're concerned about integration complexity', you know to spend extra time on slides 16-18 and bring concrete examples. If someone was a skeptic in the last meeting, address their concern proactively in your opening. This prevents you from stepping on landmines they've already identified."
+        detail: "What objections or concerns came up in prior meetings? Did they ask about data residency and not get a clear answer? Did they raise API rate limits? Did they express skepticism about uptime? Read the Salesforce notes from previous calls. If the AE says 'They're concerned about integration complexity', you know to spend extra time on integration patterns, pre-built connectors, and custom API approaches - bring concrete examples. If someone was a skeptic in the last meeting, address their concern proactively in your opening. This prevents you from stepping on landmines they've already identified."
       },
       {
         label: "Security Questionnaire",
@@ -164,7 +164,7 @@ export const preMeetingPrep: PreMeetingPrep = {
       "Know: Azure or Legacy",
       "Know: Attendee names/roles",
       "Know: Data residency requirements",
-      "Have: Backup contacts handy",
+      "Know: Key integration targets (Salesforce, SAP, etc.)",
       "Ready: Parking lot note-taking method"
     ]
   }
